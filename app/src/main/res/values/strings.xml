@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Settle Group Expenses</string>
+    <string name="mul_mem">MULTIPLE MEMBERS</string>
+    <string name="create_group">Create a new group for your trip. Enter your group\'s name, destination, description etc</string>
+    <string name="add_member">Once the group is created start adding members in it. Minimum number of members allowed is 2
+        and maximum number is 15</string>
+    <string name="add_to_do">You can add \'To-Do\' for each member</string>
+    <string name="add_expense">Add the details of expenses every time someone pays. Select who paid and for whom, how much,
+    for what reason, at what time etc</string>
+    <string name="add_advance_payment">If someone pays back the amount he owes to someone, you need to add it here</string>
+    <string name="transactions">All the transactions that were made in the trip will be shown here with all the details</string>
+    <string name="settle_debt">This section will tell you how to settle the debts among the members</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/LL_split_amount"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+      <TextView
+          android:id="@+id/tv_for_whom_members"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="20sp"
+          android:text="demo"/>
+      <TextView
+          android:id="@+id/tv_amount"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="0"
+          android:textSize="20sp"/>
+      <TextView
+          android:id="@+id/tv_currency"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:gravity="center"
+          android:text="demo"
+          android:textSize="20sp"/>
+      <Button
+          android:id="@+id/btn_edit_amt"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:gravity="center"
+          android:background="@drawable/edit" />
+</LinearLayout>

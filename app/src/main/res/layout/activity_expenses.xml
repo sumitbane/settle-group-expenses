@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/baby_pink">
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Who Paid "
+        android:textStyle="italic"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/sp_expenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_bg"/>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingRight="10dp"
+        android:background="@drawable/button_bg"
+        android:text="Next"
+        android:textSize="20dp"
+        android:textAlignment="viewEnd"/>
+</FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layout_bg">
+
+        <EditText
+            android:id="@+id/et_exp_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="60dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/edittext_bg"
+            android:inputType="numberDecimal"
+            android:maxLength="7"
+            android:textAlignment="viewEnd"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/tv_exp_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:textSize="30dp" />
+    </FrameLayout>
+</FrameLayout>

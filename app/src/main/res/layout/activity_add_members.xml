@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parentLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baby_pink"
+    tools:context=".AddMembers"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter members's name"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/edittext_bg"
+            android:inputType="numberDecimal"
+            android:maxLength="7"
+            android:textSize="20dp"
+            android:hint="Enter budget (optional)" />
+
+        <Button
+            android:id="@+id/btn_add_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:layout_gravity="center"
+            android:text="Add Member"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/MemberList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/listview_bg"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:fab_addButtonColorNormal="@android:color/holo_green_dark"
+            app:fab_addButtonColorPressed="@android:color/holo_green_dark"
+            app:fab_addButtonPlusIconColor="@android:color/white"
+            app:fab_labelStyle="@style/customfab"
+            >
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_action_1"
+                app:fab_title="Add Expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@android:color/white"
+                app:fab_colorPressed="@android:color/white"
+                app:fab_icon="@drawable/ic_add_green"
+                app:fab_size="mini"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_action_2"
+                app:fab_title="Add Advance Payments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@android:color/white"
+                app:fab_colorPressed="@android:color/white"
+                app:fab_icon="@drawable/ic_add_green"
+                app:fab_size="mini"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_action_3"
+                app:fab_title="Transactions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@android:color/white"
+                app:fab_colorPressed="@android:color/white"
+                app:fab_icon="@drawable/ic_add_green"
+                app:fab_size="mini"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_action_4"
+                app:fab_title="Settle Debts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@android:color/white"
+                app:fab_colorPressed="@android:color/white"
+                app:fab_icon="@drawable/ic_add_green"
+                app:fab_size="mini"/>
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </FrameLayout>
+</LinearLayout>

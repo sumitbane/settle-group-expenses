@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parentLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baby_pink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/tv_expenses"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="22"
+            android:gravity="center"
+            android:text="Expenses "
+            android:textStyle="bold|italic"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_mm_expenses"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="56"
+            android:gravity="center"
+            android:text="Multiple contributions"
+            android:textStyle="italic"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_payments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="22"
+            android:gravity="center"
+            android:text="Payments "
+            android:textStyle="italic"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <ListView
+            android:id="@+id/lv_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/listview_bg"
+            android:visibility="gone"/>
+
+
+        <ListView
+            android:id="@+id/lv_mm_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/listview_bg"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/lv_payments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/listview_bg"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>
